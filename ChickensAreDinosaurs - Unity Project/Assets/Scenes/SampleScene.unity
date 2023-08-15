@@ -242,6 +242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prototypeLevel
       objectReference: {fileID: 0}
+    - target: {fileID: -4259430068412431816, guid: 2c54dd086f151454489215bff01cd640, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -2552124300755168089, guid: 2c54dd086f151454489215bff01cd640, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -282,6 +286,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -523423881153203986, guid: 2c54dd086f151454489215bff01cd640, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6563687703918095212, guid: 2c54dd086f151454489215bff01cd640, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -289,7 +297,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -4259430068412431816, guid: 2c54dd086f151454489215bff01cd640, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1840747796}
   m_SourcePrefab: {fileID: -2695619058785784247, guid: 2c54dd086f151454489215bff01cd640, type: 3}
 --- !u!1 &1717104897
 GameObject:
@@ -303,8 +314,8 @@ GameObject:
   - component: {fileID: 1717104901}
   - component: {fileID: 1717104900}
   - component: {fileID: 1717104899}
-  - component: {fileID: 1717104898}
   - component: {fileID: 1717104903}
+  - component: {fileID: 1717104898}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Untagged
@@ -326,6 +337,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 7
   jumpForce: 12
+  jumpableGround:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!61 &1717104899
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -486,10 +500,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1840747792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4259430068412431816, guid: 2c54dd086f151454489215bff01cd640, type: 3}
+  m_PrefabInstance: {fileID: 630299410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!251 &1840747796
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840747792}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 0
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 630299410}
   - {fileID: 1717104902}
+  - {fileID: 630299410}
