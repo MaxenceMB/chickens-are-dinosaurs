@@ -9,19 +9,22 @@ public class ChickenMovementScript : MonoBehaviour {
     private SpriteRenderer sprite;
     private Animator anim;
 
+    private float initialGravityScale;
+
     private enum MovementState {idle, running, jumping, falling};
+    private bool doubleJump;
+    [SerializeField] private int runSpeed, jumpForce;
+    [SerializeField] private float glidingVelocity;
 
-    [SerializeField]
-    private int runSpeed, jumpForce;
-
-    [SerializeField]
-    private LayerMask jumpableGround;
+    [SerializeField] private LayerMask jumpableGround;
 
     private void Start() {
         rb     = GetComponent<Rigidbody2D>();
         coll   = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim   = GetComponent<Animator>();
+
+        initialGravityScale = rb.gravityScale;
     }
 
     private void Update() {
@@ -32,10 +35,23 @@ public class ChickenMovementScript : MonoBehaviour {
         rb.velocity = new Vector2(runSpeed * directionX, rb.velocity.y);
 
         // Jump
-        if (Input.GetButtonDown("Jump") && isGrounded()) {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        if (isGrounded() && !Input.GetButton("Jump")) {
+            doubleJump = false;
         }
 
+        if (Input.GetButtonDown("Jump")) {
+            if (isGrounded() || doubleJump) {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                doubleJump = !doubleJump;
+            }
+        } 
+
+        if (Input.GetButton("Jump") && rb.velocity.y < -0.01f) {
+            rb.gravityScale = 0f;
+            rb.velocity = new Vector2(rb.velocity.x, -glidingVelocity);
+        } else {
+            rb.gravityScale = initialGravityScale;
+        }
 
         // Animator \\
         UpdateAnimator(directionX);
