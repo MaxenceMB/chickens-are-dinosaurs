@@ -229,7 +229,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1717104902}
+  level: {fileID: 1131099051}
   cameraHeight: 3
+  smoothValue: 0.15
 --- !u!1001 &630299410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -302,6 +304,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1840747796}
   m_SourcePrefab: {fileID: -2695619058785784247, guid: 2c54dd086f151454489215bff01cd640, type: 3}
+--- !u!1 &1131099051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 900157102629174974, guid: 2c54dd086f151454489215bff01cd640, type: 3}
+  m_PrefabInstance: {fileID: 630299410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1717104897
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 7
   jumpForce: 12
-  glidingVelocity: 5
+  glidingVelocity: 4
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
