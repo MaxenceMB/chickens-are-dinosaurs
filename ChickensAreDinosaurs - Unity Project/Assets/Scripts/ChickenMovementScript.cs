@@ -8,6 +8,8 @@ public class ChickenMovementScript : MonoBehaviour {
     private SpriteRenderer sprite;
     private Animator anim;
 
+    private enum MovementState {idle, running, jumping, falling};
+
     [SerializeField]
     private int runSpeed, jumpForce;
 
@@ -35,14 +37,26 @@ public class ChickenMovementScript : MonoBehaviour {
     }
 
     private void UpdateAnimator(float directionX) {
+
+        MovementState state;
+
+        // Grounded animations (Run and Idle)
         if (directionX > 0f) {
-            anim.SetBool("isRunning", true);
+            state = MovementState.running;
             sprite.flipX = false;
         } else if (directionX < 0f) {
-            anim.SetBool("isRunning", true);
+            state = MovementState.running;
             sprite.flipX = true;
         } else {
-            anim.SetBool("isRunning", false);
+            state = MovementState.idle;
         }
+
+        if (rb.velocity.y > 0.01f) {
+            state = MovementState.jumping;
+        } else if (rb.velocity.y < -0.01f) {
+            state = MovementState.falling;
+        }
+
+        anim.SetInteger("moveState", (int)state);
     }
 }
