@@ -11,8 +11,9 @@ public class ChickenMovementScript : MonoBehaviour {
 
     private float initialGravityScale;
 
-    private enum MovementState {idle, running, jumping, falling};
+    private enum MovementState {idle, running, jumping, falling, gliding};
     private bool doubleJump;
+    private bool isGliding = false;
     [SerializeField] private int runSpeed, jumpForce;
     [SerializeField] private float glidingVelocity;
 
@@ -51,8 +52,11 @@ public class ChickenMovementScript : MonoBehaviour {
         if (Input.GetButton("Jump") && rb.velocity.y < -0.01f) {
             rb.gravityScale = 0f;
             rb.velocity = new Vector2(rb.velocity.x, -glidingVelocity);
+
+            isGliding = true;
         } else {
             rb.gravityScale = initialGravityScale;
+            isGliding = false;
         }
 
         // Animator \\
@@ -84,6 +88,10 @@ public class ChickenMovementScript : MonoBehaviour {
             state = MovementState.jumping;
         } else if (rb.velocity.y < -0.01f) {
             state = MovementState.falling;
+        } 
+        
+        if (isGliding) {
+            state = MovementState.gliding;
         }
 
         // Set the animator the correct state
