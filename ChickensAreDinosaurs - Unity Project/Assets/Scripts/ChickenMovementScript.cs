@@ -63,7 +63,7 @@ public class ChickenMovementScript : MonoBehaviour {
 
     private bool isGrounded() {
         // Makes a box just under the collider and checks if it's colliding with ground layer
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .01f, jumpableGround);
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, 0.1f, jumpableGround);
     }
 
     private void UpdateAnimator(float directionX) {

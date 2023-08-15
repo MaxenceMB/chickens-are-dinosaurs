@@ -30,13 +30,14 @@ public class CameraControllerScript : MonoBehaviour {
 
     private void FixedUpdate() {
         // Smoothing the camera's movement
-        Vector3 finalPos    = new Vector3(player.position.x, player.position.y + cameraHeight, transform.position.z);
+        Vector3 finalPos   = new Vector3(player.position.x, player.position.y + cameraHeight, transform.position.z);
         transform.position = Vector3.SmoothDamp(transform.position, finalPos, ref velocity, smoothValue);
 
         // Blocking camera with borders
         transform.position = new Vector3(
             Mathf.Clamp(transform.position.x, minX, maxX),
             Mathf.Clamp(transform.position.y, minY, maxY),
-            -10);
+            -10
+        );
     }
 }
