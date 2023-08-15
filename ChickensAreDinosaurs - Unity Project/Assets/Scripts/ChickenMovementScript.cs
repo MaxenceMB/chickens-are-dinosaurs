@@ -43,6 +43,8 @@ public class ChickenMovementScript : MonoBehaviour {
             if (isGrounded() || doubleJump) {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                 doubleJump = !doubleJump;
+
+                anim.Play("chickenJump_Clip", -1, 0f); // Maybe to fix later, its because i want the animation to start again on the double jump.
             }
         } 
 

@@ -337,6 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 7
   jumpForce: 12
+  glidingVelocity: 5
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
