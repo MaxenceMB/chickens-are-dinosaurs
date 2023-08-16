@@ -1,1 +1,2 @@
 Rules\grass_Rules.tmx
+Rules\grass_deco_Rules.tmx

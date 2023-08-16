@@ -3,17 +3,17 @@
  <image source="../../Sprites/Tiles/grass_tileset_sheet.png" width="96" height="48"/>
  <tile id="0">
   <objectgroup draworder="index" id="2">
-   <object id="12" x="0" y="4" width="16" height="12"/>
+   <object id="1" x="0" y="2" width="16" height="14"/>
   </objectgroup>
  </tile>
  <tile id="1">
   <objectgroup draworder="index" id="2">
-   <object id="4" x="0" y="4" width="16" height="12"/>
+   <object id="1" x="0" y="2" width="16" height="14"/>
   </objectgroup>
  </tile>
  <tile id="2">
   <objectgroup draworder="index" id="3">
-   <object id="6" x="0" y="4" width="16" height="12"/>
+   <object id="9" x="0" y="2" width="16" height="14"/>
   </objectgroup>
  </tile>
  <tile id="3">
