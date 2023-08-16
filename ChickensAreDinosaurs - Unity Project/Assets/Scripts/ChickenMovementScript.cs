@@ -35,13 +35,15 @@ public class ChickenMovementScript : MonoBehaviour {
 
         // Jump
         if (isGrounded() && !Input.GetButton("Jump")) {
-            doubleJump = false;
+            doubleJump = true;
         }
 
         if (Input.GetButtonDown("Jump")) {
-            if (isGrounded() || doubleJump) {
+            if (doubleJump) {
+                if (!isGrounded()) {
+                    doubleJump = !doubleJump;
+                }
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-                doubleJump = !doubleJump;
 
                 anim.Play("chickenJump_Clip", -1, 0f); // Maybe to fix later, its because i want the animation to start again on the double jump.
             }
