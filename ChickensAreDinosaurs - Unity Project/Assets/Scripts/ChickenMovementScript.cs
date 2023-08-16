@@ -49,7 +49,7 @@ public class ChickenMovementScript : MonoBehaviour {
             }
         } 
 
-        if (Input.GetButton("Jump") && rb.velocity.y < -0.01f) {
+        if (Input.GetButton("Jump") && rb.velocity.y < -0.1f) {
             rb.gravityScale = 0f;
             rb.velocity = new Vector2(rb.velocity.x, -glidingVelocity);
 
