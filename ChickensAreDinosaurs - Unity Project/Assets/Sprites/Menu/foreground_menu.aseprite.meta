@@ -128,7 +128,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 160
+      width: 320
       height: 29
     spriteID: 649461612f4d28644bc4f8b51de6aad4
     spriteBone: []
@@ -148,7 +148,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 226
-      width: 160
+      width: 320
       height: 28
     spriteID: c6cf46c38d2ac3440ab842d3983805d2
     spriteBone: []
@@ -168,7 +168,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 41
-      width: 160
+      width: 320
       height: 29
     spriteID: c67f96a0c94fab4448ba38ed86a72c97
     spriteBone: []
@@ -188,7 +188,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 78
-      width: 160
+      width: 320
       height: 29
     spriteID: 40fa40cf06fedf7498a59c62158da7db
     spriteBone: []
@@ -208,7 +208,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 115
-      width: 160
+      width: 320
       height: 29
     spriteID: 6ad102a3b28a1ba4fb3d577ee808e412
     spriteBone: []
@@ -228,7 +228,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 262
-      width: 160
+      width: 320
       height: 28
     spriteID: 27ac69f3a0a082d4497c8c34da8a029a
     spriteBone: []
@@ -248,7 +248,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 152
-      width: 160
+      width: 320
       height: 29
     spriteID: 9813e1242f952e249b0da3393f52a461
     spriteBone: []
@@ -268,7 +268,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 189
-      width: 160
+      width: 320
       height: 29
     spriteID: c2b0d222c97a20944aa0b8297732800a
     spriteBone: []
@@ -293,7 +293,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 160
+        width: 320
         height: 29
       spriteId: 649461612f4d28644bc4f8b51de6aad4
     - name: foreground_menu_Frame_1
@@ -301,7 +301,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 160
+        width: 320
         height: 28
       spriteId: c6cf46c38d2ac3440ab842d3983805d2
     - name: foreground_menu_Frame_2
@@ -309,7 +309,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 160
+        width: 320
         height: 29
       spriteId: c67f96a0c94fab4448ba38ed86a72c97
     - name: foreground_menu_Frame_3
@@ -317,7 +317,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 160
+        width: 320
         height: 29
       spriteId: 40fa40cf06fedf7498a59c62158da7db
     - name: foreground_menu_Frame_4
@@ -325,7 +325,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 160
+        width: 320
         height: 29
       spriteId: 6ad102a3b28a1ba4fb3d577ee808e412
     - name: foreground_menu_Frame_5
@@ -333,7 +333,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 160
+        width: 320
         height: 28
       spriteId: 27ac69f3a0a082d4497c8c34da8a029a
     - name: foreground_menu_Frame_6
@@ -341,7 +341,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 160
+        width: 320
         height: 29
       spriteId: 9813e1242f952e249b0da3393f52a461
     - name: foreground_menu_Frame_7
@@ -349,7 +349,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 160
+        width: 320
         height: 29
       spriteId: c2b0d222c97a20944aa0b8297732800a
     linkedCells: []
@@ -357,4 +357,4 @@ ScriptedImporter:
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 160, y: 90}
+  canvasSize: {x: 320, y: 180}
