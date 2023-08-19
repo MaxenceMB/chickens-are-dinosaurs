@@ -2,9 +2,9 @@ using UnityEngine;
 using System;
 
 [Serializable] public class BackgroundLayer {
-    public GameObject layer;         // Layer avec les 3 sprites
-    public float parallaxEffect;     /* Vitesse de déplacement: 1 = suit complètement la caméra (parrait immobile),
-                                                                0 = reste imobile dans le monde, (bouge aussi vite que le joueur) */
+    public GameObject layer;                 // Layer avec les 3 sprites
+    public float parallaxEffect;             /* Vitesse de déplacement: 1 = suit complètement la caméra (parrait immobile),
+                                                                        0 = reste imobile dans le monde, (bouge aussi vite que le joueur) */
     private float length, height, startPos;  // Données du layer itself
 
     private void Start() {

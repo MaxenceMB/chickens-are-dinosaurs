@@ -6,7 +6,24 @@ public class ParallaxBackgroundScript : MonoBehaviour {
 
     
     [SerializeField] private GameObject cam;
-    public BackgroundLayer[] Layers;
+    [SerializeField] public BackgroundLayer[] Layers;
+
+    [SerializeField] public GameObject bottomSprite;
+    [SerializeField] public Color bottomColor;
+
+    private void Start() {
+        // Getting camera's dimensions
+        Camera camera = cam.GetComponent<Camera>();
+        float camHeightDimensions = 2f * camera.orthographicSize;
+        float camWidthDimensions = camHeightDimensions * camera.aspect;
+
+        // Making bottom sprite
+        SpriteRenderer render = bottomSprite.GetComponent<SpriteRenderer>();
+
+        bottomSprite.transform.localScale = new Vector3(camWidthDimensions, 5, bottomSprite.transform.localScale.z);
+        render.color = bottomColor;
+        render.sortingOrder = Layers.Length;
+    }
 
     void Update() {
         foreach (BackgroundLayer l in Layers) {
@@ -21,6 +38,8 @@ public class ParallaxBackgroundScript : MonoBehaviour {
             if (temp > l.getStartPos() + l.getLength()) l.setStartPos(l.getLength());
             else if (temp < l.getStartPos() - l.getLength()) l.setStartPos(-l.getLength());
         }
+
+        bottomSprite.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y-5, 0);
     }
 
 }
