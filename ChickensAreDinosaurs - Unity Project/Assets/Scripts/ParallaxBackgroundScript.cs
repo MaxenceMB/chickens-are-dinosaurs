@@ -1,41 +1,26 @@
-using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UIElements;
 
 public class ParallaxBackgroundScript : MonoBehaviour {
 
     
     [SerializeField] private GameObject cam;
+    public BackgroundLayer[] Layers;
 
-    [Serializable]
-    public class BackgroundLayer {
-        public GameObject layer;
-        public float parallaxEffect;
-
-        public float length, startpos;
-    }
-
-    // Start is called before the first frame update
-    void Start() {
-        List<BackgroundLayer> layers = new List<BackgroundLayer>();
-
-        foreach (BackgroundLayer l in layers) {
-            l.startpos = l.layer.transform.position.x;
-            l.length = l.layer.GetComponent<SpriteRenderer>().bounds.size.x;
-        }
-        
-    }
-
-    // Update is called once per frame
     void Update() {
-        /*
-        float temp = (cam.transform.position.x * (1 - parallaxEffect));
-        float dist = (cam.transform.position.x * parallaxEffect);
+        foreach (BackgroundLayer l in Layers) {
+            float temp = (cam.transform.position.x * (1 - l.parallaxEffect));
+            float dist = (cam.transform.position.x * l.parallaxEffect);
 
-        transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
+            l.layer.transform.position = new Vector3(l.getStartPos() + dist,
+                                                     cam.transform.position.y * l.parallaxEffect,
+                                                     transform.position.z
+                                                     );
 
-        if (temp > startpos + length) startpos += length;
-        else if (temp < startpos - length) startpos -= length;
-        */
+            if (temp > l.getStartPos() + l.getLength()) l.setStartPos(l.getLength());
+            else if (temp < l.getStartPos() - l.getLength()) l.setStartPos(-l.getLength());
+        }
     }
+
 }
