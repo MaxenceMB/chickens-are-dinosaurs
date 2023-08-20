@@ -31,7 +31,7 @@ public class ParallaxBackgroundScript : MonoBehaviour {
             float dist = (cam.transform.position.x * l.parallaxEffect);
 
             l.layer.transform.position = new Vector3(l.getStartPos() + dist,
-                                                     cam.transform.position.y * l.parallaxEffect,
+                                                     cam.transform.position.y * l.parallaxEffect + l.height,
                                                      transform.position.z
                                                      );
 
@@ -39,7 +39,10 @@ public class ParallaxBackgroundScript : MonoBehaviour {
             else if (temp < l.getStartPos() - l.getLength()) l.setStartPos(-l.getLength());
         }
 
-        bottomSprite.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y-5, 0);
+        bottomSprite.transform.position = new Vector3(cam.transform.position.x,
+                                                      Layers[Layers.Length - 1].layer.GetComponent<SpriteRenderer>().bounds.min.y - 2.5f,
+                                                      0
+                                                      );
     }
 
 }
