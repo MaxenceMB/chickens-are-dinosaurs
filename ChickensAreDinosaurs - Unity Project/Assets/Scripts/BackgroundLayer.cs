@@ -8,9 +8,9 @@ using System;
                                                                    0 = reste imobile dans le monde, (bouge aussi vite que le joueur) */
     private float dimLength, startPos;  // Données du layer itself
 
-    private void Start() {
-        dimLength = layer.GetComponent<SpriteRenderer>().bounds.size.x;
-        startPos = layer.transform.position.x;
+    public void Start() {
+        this.dimLength = layer.GetComponent<SpriteRenderer>().bounds.size.x;
+        this.startPos  = layer.transform.position.x;
     }
 
     public float getLength() {
@@ -18,10 +18,10 @@ using System;
     }
 
     public void setStartPos(float val) {
-        startPos += val;
+        this.startPos += val;
     }
 
     public float getStartPos() {
-        return startPos;
+        return this.startPos;
     }
 }
