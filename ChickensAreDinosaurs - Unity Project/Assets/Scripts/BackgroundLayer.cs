@@ -1,7 +1,8 @@
 using UnityEngine;
 using System;
 
-[Serializable] public class BackgroundLayer {
+[Serializable]
+public class BackgroundLayer {
     public GameObject layer;            // Layer avec les 3 sprites
     public float height;                // hauteur ajoutée 
     public float parallaxEffect;        /* Vitesse de déplacement: 1 = suit complètement la caméra (parrait immobile),
