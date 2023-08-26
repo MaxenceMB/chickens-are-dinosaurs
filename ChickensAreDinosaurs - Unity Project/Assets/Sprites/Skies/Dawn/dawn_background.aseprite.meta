@@ -121,15 +121,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: dawn_background
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.53956836, y: 0.056179777}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 640
-      height: 504
+      width: 695
+      height: 534
     spriteID: 9e9d3b0e6d2fe794aa0bbe1ad8849097
     spriteBone: []
     spriteOutline: []
@@ -151,10 +151,10 @@ ScriptedImporter:
     - name: dawn_background
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 640
-        height: 504
+        x: -55
+        y: -30
+        width: 695
+        height: 534
       spriteId: 9e9d3b0e6d2fe794aa0bbe1ad8849097
     linkedCells: []
     parentIndex: -1
