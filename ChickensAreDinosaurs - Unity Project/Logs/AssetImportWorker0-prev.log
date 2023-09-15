@@ -15,7 +15,7 @@ C:/Users/Maxou/Desktop/FourTout/Projets/chickens-are-dinosaurs/ChickensAreDinosa
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60246
+61823
 Successfully changed project path to: C:/Users/Maxou/Desktop/FourTout/Projets/chickens-are-dinosaurs/ChickensAreDinosaurs - Unity Project
 C:/Users/Maxou/Desktop/FourTout/Projets/chickens-are-dinosaurs/ChickensAreDinosaurs - Unity Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/Maxou/Desktop/FourTout/Projets/chickens-are-dinosaurs/ChickensAreDinosa
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [10636] Host "[IP] 10.188.127.28 [Port] 0 [Flags] 2 [Guid] 2554832065 [EditorId] 2554832065 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FO188QO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [16288] Host "[IP] 10.188.127.28 [Port] 0 [Flags] 2 [Guid] 386990243 [EditorId] 386990243 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FO188QO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [10636] Host "[IP] 10.188.127.28 [Port] 0 [Flags] 2 [Guid] 2554832065 [EditorId] 2554832065 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FO188QO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16288] Host "[IP] 10.188.127.28 [Port] 0 [Flags] 2 [Guid] 386990243 [EditorId] 386990243 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FO188QO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 319.59 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 80.75 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56804
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.046965 seconds.
-- Loaded All Assemblies, in  1.581 seconds
+Registered in 0.037978 seconds.
+- Loaded All Assemblies, in  0.990 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.703 seconds
-Domain Reload Profiling: 2277ms
-	BeginReloadAssembly (707ms)
+- Finished resetting the current domain, in  1.014 seconds
+Domain Reload Profiling: 1996ms
+	BeginReloadAssembly (240ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (115ms)
-	RebuildNativeTypeToScriptingClass (29ms)
-	initialDomainReloadingComplete (234ms)
-	LoadAllAssembliesAndSetupDomain (489ms)
-		LoadAssemblies (686ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (157ms)
+	LoadAllAssembliesAndSetupDomain (496ms)
+		LoadAssemblies (234ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (424ms)
-			TypeCache.Refresh (420ms)
-				TypeCache.ScanAssembly (380ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (703ms)
+		AnalyzeDomain (464ms)
+			TypeCache.Refresh (462ms)
+				TypeCache.ScanAssembly (390ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1014ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (530ms)
+		SetupLoadedEditorAssemblies (808ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
-			SetLoadedEditorAssemblies (20ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (90ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (7ms)
-			ProcessInitializeOnLoadAttributes (320ms)
-			ProcessInitializeOnLoadMethodAttributes (149ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (513ms)
+			ProcessInitializeOnLoadMethodAttributes (173ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,51 +116,51 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Maxou\Desktop\FourTout\Projets\chickens-are-dinosaurs\ChickensAreDinosaurs - Unity Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Maxou\Desktop\FourTout\Projets\chickens-are-dinosaurs\ChickensAreDinosaurs - Unity Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  3.423 seconds
-Refreshing native plugins compatible for Editor in 16.31 ms, found 4 plugins.
+- Loaded All Assemblies, in  2.706 seconds
+Refreshing native plugins compatible for Editor in 28.65 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.538 seconds
-Domain Reload Profiling: 5945ms
-	BeginReloadAssembly (923ms)
+- Finished resetting the current domain, in  2.002 seconds
+Domain Reload Profiling: 4676ms
+	BeginReloadAssembly (701ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (31ms)
+		DisableScriptedObjects (30ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (119ms)
-	RebuildCommonClasses (117ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (110ms)
-	LoadAllAssembliesAndSetupDomain (2236ms)
-		LoadAssemblies (2239ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (268ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (196ms)
+	LoadAllAssembliesAndSetupDomain (1482ms)
+		LoadAssemblies (1212ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (543ms)
-			TypeCache.Refresh (491ms)
-				TypeCache.ScanAssembly (461ms)
-			ScanForSourceGeneratedMonoScriptInfo (41ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (2539ms)
+		AnalyzeDomain (707ms)
+			TypeCache.Refresh (613ms)
+				TypeCache.ScanAssembly (574ms)
+			ScanForSourceGeneratedMonoScriptInfo (78ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (2003ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1825ms)
+		SetupLoadedEditorAssemblies (1395ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (48ms)
-			SetLoadedEditorAssemblies (16ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (12ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (433ms)
-			ProcessInitializeOnLoadAttributes (1117ms)
-			ProcessInitializeOnLoadMethodAttributes (148ms)
-			AfterProcessingInitializeOnLoad (62ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (284ms)
+			ProcessInitializeOnLoadAttributes (918ms)
+			ProcessInitializeOnLoadMethodAttributes (105ms)
+			AfterProcessingInitializeOnLoad (48ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.35 seconds
-Refreshing native plugins compatible for Editor in 47.79 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (20ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.20 seconds
+Refreshing native plugins compatible for Editor in 26.19 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4153 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 70 unused Assets / (244.7 KB). Loaded Objects now: 4612.
-Memory consumption went from 142.3 MB to 142.1 MB.
-Total: 6.812900 ms (FindLiveObjects: 0.422900 ms CreateObjectMapping: 0.491600 ms MarkObjects: 5.608800 ms  DeleteObjects: 0.288500 ms)
+Memory consumption went from 142.5 MB to 142.3 MB.
+Total: 14.716400 ms (FindLiveObjects: 1.364300 ms CreateObjectMapping: 0.248600 ms MarkObjects: 10.527700 ms  DeleteObjects: 2.574500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -174,49 +174,43 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 27.29 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7 unused Assets / (198.2 KB). Loaded Objects now: 4612.
-Memory consumption went from 77.5 MB to 77.3 MB.
-Total: 5.815000 ms (FindLiveObjects: 0.457400 ms CreateObjectMapping: 0.646800 ms MarkObjects: 4.517800 ms  DeleteObjects: 0.191700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
 Received Import Request.
-  Time since last request: 614980.089270 seconds.
-  path: Assets/Sprites/Skies/Dawn/dawn_background.aseprite
-  artifactKey: Guid(3a5967c2f7188cd42add60b3570d28d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Skies/Dawn/dawn_background.aseprite using Guid(3a5967c2f7188cd42add60b3570d28d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d172d40daa26b5c5bb8d213f2e7a47') in 0.380931 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Sprites/Skies/Dawn/Ciel.png
-  artifactKey: Guid(0b92aef6f436cb844b0b734904a385d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Skies/Dawn/Ciel.png using Guid(0b92aef6f436cb844b0b734904a385d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db88cc23fa666d1b308b4539c59edf29') in 0.069143 seconds
+  Time since last request: 657107.052290 seconds.
+  path: Assets/Sprites/Skies/Dawn/Foret 1erPlan.png
+  artifactKey: Guid(6ad603641d573254f9b5849bcb598399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Skies/Dawn/Foret 1erPlan.png using Guid(6ad603641d573254f9b5849bcb598399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7e1041acc898777a9bbdd63bea3e244') in 0.350777 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Sprites/Skies/Dawn/buissons jsp.png
-  artifactKey: Guid(aa68c6c7206e22548b8d5769c84c3192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Skies/Dawn/buissons jsp.png using Guid(aa68c6c7206e22548b8d5769c84c3192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85cd9a3eb9f026e1fc0c1fc747f0a44e') in 0.058759 seconds
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/Skies/Dawn/dawn_background.aseprite
+  artifactKey: Guid(3a5967c2f7188cd42add60b3570d28d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Skies/Dawn/dawn_background.aseprite using Guid(3a5967c2f7188cd42add60b3570d28d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22520cd44137071b1febedc23b4429a0') in 0.221976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.001669 seconds.
+  path: Assets/Sprites/Skies/Dawn/Foret 2ndPlan.png
+  artifactKey: Guid(e3fe9bd864cb6284fb5bd35b3c7400b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Skies/Dawn/Foret 2ndPlan.png using Guid(e3fe9bd864cb6284fb5bd35b3c7400b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ede9bdfcf544d0deab08f71652d6945a') in 0.040804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Skies/Dawn/Ciel.png
+  artifactKey: Guid(0b92aef6f436cb844b0b734904a385d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Skies/Dawn/Ciel.png using Guid(0b92aef6f436cb844b0b734904a385d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4858ad0863406aa1d7021e7cedd1061') in 0.046287 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Skies/Dawn/Montagnes.png
+  artifactKey: Guid(c6f1003b585d3a54fa3dd92ad2900caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Skies/Dawn/Montagnes.png using Guid(c6f1003b585d3a54fa3dd92ad2900caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc21baa1a83127c314ae1135b908c288') in 0.092102 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
@@ -224,50 +218,50 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Maxou\Desktop\FourTout\Projets\chickens-are-dinosaurs\ChickensAreDinosaurs - Unity Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Maxou\Desktop\FourTout\Projets\chickens-are-dinosaurs\ChickensAreDinosaurs - Unity Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.004 seconds
-Refreshing native plugins compatible for Editor in 42.48 ms, found 4 plugins.
+- Loaded All Assemblies, in  2.384 seconds
+Refreshing native plugins compatible for Editor in 32.92 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  8.296 seconds
-Domain Reload Profiling: 10289ms
-	BeginReloadAssembly (326ms)
+- Finished resetting the current domain, in  4.403 seconds
+Domain Reload Profiling: 6762ms
+	BeginReloadAssembly (332ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (24ms)
+		DisableScriptedObjects (27ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (62ms)
-	RebuildCommonClasses (68ms)
-	RebuildNativeTypeToScriptingClass (33ms)
-	initialDomainReloadingComplete (101ms)
-	LoadAllAssembliesAndSetupDomain (1465ms)
-		LoadAssemblies (827ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (96ms)
+	LoadAllAssembliesAndSetupDomain (1839ms)
+		LoadAssemblies (1053ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (753ms)
-			TypeCache.Refresh (742ms)
-				TypeCache.ScanAssembly (708ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (915ms)
+			TypeCache.Refresh (903ms)
+				TypeCache.ScanAssembly (875ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (11ms)
-	FinalizeReload (8297ms)
+	FinalizeReload (4404ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1299ms)
+		SetupLoadedEditorAssemblies (1420ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (10ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (307ms)
-			ProcessInitializeOnLoadAttributes (772ms)
-			ProcessInitializeOnLoadMethodAttributes (115ms)
-			AfterProcessingInitializeOnLoad (61ms)
-			EditorAssembliesLoaded (2ms)
+			BeforeProcessingInitializeOnLoad (337ms)
+			ProcessInitializeOnLoadAttributes (905ms)
+			ProcessInitializeOnLoadMethodAttributes (96ms)
+			AfterProcessingInitializeOnLoad (48ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (37ms)
-Refreshing native plugins compatible for Editor in 52.59 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (69ms)
+Refreshing native plugins compatible for Editor in 25.37 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4147 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (217.0 KB). Loaded Objects now: 4631.
-Memory consumption went from 145.2 MB to 145.0 MB.
-Total: 6.308400 ms (FindLiveObjects: 0.492600 ms CreateObjectMapping: 0.279200 ms MarkObjects: 5.202200 ms  DeleteObjects: 0.332800 ms)
+Unloading 42 unused Assets / (217.2 KB). Loaded Objects now: 4631.
+Memory consumption went from 145.4 MB to 145.2 MB.
+Total: 4.576200 ms (FindLiveObjects: 0.502600 ms CreateObjectMapping: 0.285800 ms MarkObjects: 3.564100 ms  DeleteObjects: 0.222400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
