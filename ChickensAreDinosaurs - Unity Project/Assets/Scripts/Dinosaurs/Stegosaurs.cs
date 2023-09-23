@@ -1,15 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Stegosaurs : MonoBehaviour
-{
-    public float moveSpeed = 5.0f; // Dinozorun hareket hýzý
-    public float prototypeLevelDetectionRange = 1.0f; // Engel tespit aralýðý
-    private bool isMovingForward = true; // Dinozorun ileri mi geri mi gittiði kontrolü
+public class Stegosaurs : MonoBehaviour {
+    public float moveSpeed = 5.0f; // Dinozorun hareket hï¿½zï¿½
+    public float prototypeLevelDetectionRange = 1.0f; // Engel tespit aralï¿½ï¿½ï¿½
+    private bool isMovingForward = true; // Dinozorun ileri mi geri mi gittiï¿½i kontrolï¿½
 
-    void Update()
-    {
+    void Update() {
         if (isMovingForward)
         {
             // Dinozorun ileri gitmesi
@@ -21,13 +17,13 @@ public class Stegosaurs : MonoBehaviour
             transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
         }
 
-        // Engel kontrolü
+        // Engel kontrolï¿½
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, prototypeLevelDetectionRange))
         {
             if (hit.collider.CompareTag("prototypeLevel"))
             {
-                // Engel varsa yönü deðiþtir
+                // Engel varsa yï¿½nï¿½ deï¿½iï¿½tir
                 isMovingForward = !isMovingForward;
             }
         }

@@ -12,22 +12,25 @@ public class DinoObject : ScriptableObject {
     [SerializeField] private Sprite sprite;
 
     [Header("Dinosaur - Game infos")]
-    [SerializeField] private float movementSpeed;
-    [Range(0, 100)][SerializeField] private int health = 50;
     [SerializeField] private bool alreadyDiscovered = false;
+    [SerializeField] private int numberDiscovered = 0;
 
     [Header("Dinosaur - Real infos")]
     [SerializeField] private Era livingEra = Era.None;
-    [SerializeField] private int eraStart  = -0;
-    [SerializeField] private int eraEnd    = -0;
+    [SerializeField] private string eraYears = "-000M to -000M BC";
     [Space(20)]
-    [SerializeField] private int lifeSpan = 0;
+    [SerializeField] private string lifeSpan = "000 Years";
     [Space(20)]
-    [SerializeField] private int weight = 0;
-    [SerializeField] private int width  = 0;
-    [SerializeField] private int height = 0;
+    [SerializeField] private string weight = "0kg";
+    [SerializeField] private string width  = "0m";
+    [SerializeField] private string height = "0m";
     [Space(20)]
     [SerializeField] private Diet diet = Diet.None;
+
+
+    public void Awake() {
+        Debug.Log("Dino awaken!");
+    }
 
 
     // ----- Get Functions ----- \\
@@ -35,47 +38,44 @@ public class DinoObject : ScriptableObject {
         return this.dinoName;
     }
 
-    public float getSpeed() {
-        return this.movementSpeed;
+    public Sprite getSprite() {
+        return this.sprite;
     }
 
-    public int getHealth() {
-        return this.health;
+    public bool isDiscovered() {
+        return this.alreadyDiscovered;
+    }
+
+    public int getNumberDiscovered() {
+        return this.numberDiscovered;
     }
 
     public Era getEra() {
         return this.livingEra;
     }
 
-    public int[] getEraYears() {
-        int[] years = {eraStart, eraEnd};
-        return years;
+    public string getEraYears() {
+        return this.eraYears;
     }
 
-    public int getLifespan() {
+    public string getLifespan() {
         return this.lifeSpan;
     }
 
-    public int getWeight() {
+    public string getWeight() {
         return this.weight;
     }
 
-    public int getWidth() {
+    public string getWidth() {
         return this.width;
     }
 
-    public int getHeight() {
+    public string getHeight() {
         return this.height;
     }
 
     public Diet getDiet() {
         return this.diet;
-    }
-
-
-    // ----- Set Functions ----- \\
-    public void setHealth(int newHealth) {
-        this.health = newHealth;
     }
 
 }
