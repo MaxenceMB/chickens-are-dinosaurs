@@ -23,8 +23,6 @@ public class DinosaurScript : MonoBehaviour {
     private RaycastHit hit;
     
     private void Start() {
-        dinoObject.Awake();
-
         // Patrol start 
         rangeBegin = new Vector2(transform.position.x - patrolRange/2, transform.position.y);
         rangeEnd   = new Vector2(transform.position.x + patrolRange/2, transform.position.y);
@@ -35,11 +33,7 @@ public class DinosaurScript : MonoBehaviour {
         // Sprite assignment
         spr = this.GetComponent<SpriteRenderer>();
         spr.sprite = dinoObject.getSprite();
-        if(moveSpot.x > transform.position.x) {
-            spr.flipX = true;
-        } else {
-            spr.flipX = false;
-        }
+        CheckDir();
     }
 
     private void Update() {
@@ -49,13 +43,7 @@ public class DinosaurScript : MonoBehaviour {
         if(Vector3.Distance(transform.position, moveSpot) < 1f) {
             if(waitTime <= 0) {
                 moveSpot = new Vector2(UnityEngine.Random.Range(rangeBegin.x, rangeEnd.x), transform.position.y);
-
-                if(moveSpot.x > transform.position.x) {
-                    spr.flipX = true;
-                } else {
-                    spr.flipX = false;
-                }
-
+                CheckDir();
                 waitTime = GenerateRandomTime();
             } else {
                 waitTime -= Time.deltaTime;
@@ -75,8 +63,19 @@ public class DinosaurScript : MonoBehaviour {
 
         if (hit.collider != null) {
             if (hit.transform.tag == "Level") {
-                Debug.Log("Touched");
+                moveSpot = new Vector2(UnityEngine.Random.Range(rangeBegin.x, rangeEnd.x), transform.position.y);
+                CheckDir();
             }
+        }
+    }
+
+    private void CheckDir() {
+        if(moveSpot.x > transform.position.x) {
+            facingRight = true;
+            spr.flipX = true;
+        } else {
+            facingRight = false;
+            spr.flipX = false;
         }
     }
 

@@ -28,11 +28,6 @@ public class DinoObject : ScriptableObject {
     [SerializeField] private Diet diet = Diet.None;
 
 
-    public void Awake() {
-        Debug.Log("Dino awaken!");
-    }
-
-
     // ----- Get Functions ----- \\
     public string getName() {
         return this.dinoName;
